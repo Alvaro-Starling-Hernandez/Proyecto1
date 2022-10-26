@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Employee Recruitment Form</title>
+</head>
+
+<body>
+    <h1 id="title">Employee Recruitment Form For Programmers</h1>
+    <p id="description">Complete this form to participate in the recruiting process</p>
+    <div class="form">
+        <form action="" id="survey-form">
+
+            <label class="mainlabel" for="name" id="name-label">Name
+                <input id="name" type="text" required placeholder="Enter your name">
+            </label>
+
+            <label class="mainlabel" for="email" id="email-label">Email
+                <input id="email" type="email" required placeholder="Enter your Email">
+            </label>
+
+            <label class="mainlabel" for="age" id="number-label">Age <label class="mini">(Optional)</label>
+                <input id="number" type="number" min="13" max="120" placeholder="Age">
+            </label>
+
+            <label class="mainlabel">What is your level of programming experience?</label>
+
+            <select name="level" id="dropdown-level" >
+                <option value="">Select an option</option>
+                <option value="">Senior</option>
+                <option value="">Semi Senior</option>
+                <option value="">Junior</option>
+                <option value="">Other</option>
+            </select>
+            
+            <label class="mainlabel">When are you available to work?</label>
+            <label for="full"><input type="radio" value="full" class="inline" name="time" id="full">Full time</label>
+            <label for="mornings"><input type="radio" value="mornings" class="inline" name="time" id="mornings">In the mornings</label>
+            <label for="afternoons"><input type="radio" value="afternoons" class="inline" name="time" id="afternoons">In the afternoons</label>
+            
+            <label class="mainlabel">What part of development do you do?</label>
+            <select name="skill" id="dropdown">
+                <option value="">Select an option</option>
+                <option value="1">Front End</option>
+                <option value="2">Back End</option>
+                <option value="3">Full Stack</option>
+                <option value="4">Other</option>
+            </select>
+
+            <label class="mainlabel">Which of these technologies do you manage? <label class="mini">(Check all that apply)</label></label>
+
+            <label for="javascript"><input type="checkbox" value="javascript" class="inline" id="javascript">JavaScript</label>
+            <label for="html"><input type="checkbox" value="html" class="inline"id="html">HTML</label>
+            <label for="css"><input type="checkbox" value="css" class="inline"id="css">CSS</label>
+            <label for="php"><input type="checkbox" value="php" class="inline"id="php">PHP</label>
+            <label for="python"><input type="checkbox" value=" python"class="inline"id="python">Python</label>
+            <label for="angular"><input type="checkbox" value="angular" class="inline"id="angular">Angular</label>
+            <label for="react"><input type="checkbox" value="react" class="inline"id="react">React</label>
+            <label for="sql"><input type="checkbox" value="sql" class="inline"id="sql">SQL</label>
+            <label for="nosql"><input type="checkbox" value="nosql" class="inline"id="nosql">NoSQL</label>
+            
+
+            <label class="mainlabel">Any comments or suggestions?</label>
+            <textarea id="comment" rows="5" cols="50" placeholder="Enter your comment here.."></textarea>
+
+
+            <input type="submit" id="submit" value="Submit">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
